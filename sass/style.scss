@@ -1,0 +1,372 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+@font-face {
+	font-family: quicksand-bold;
+	src: url('../font/Quicksand/Quicksand-Bold.ttf');
+}
+@font-face {
+	font-family: Lato;
+	src:url('../font/font and icon/Lato-Regular.ttf');
+}
+@font-face {
+	font-family: VNFquicksand;
+	src:url('../font/font and icon/vnf-quicksand-bold.ttf');
+}
+@font-face {
+	font-family: Lato-bold;
+	src:url('../font/font and icon/Lato-Bold.ttf');
+}
+body{
+	margin:0px;
+	padding: 0px;
+	font-family: Lato;
+}
+a:focus{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+section {
+	width: 100%;
+	max-height: 100vh;
+}
+@mixin position($x,$y){
+	top: $x;
+	left: $y;
+}
+.navbar {
+	border:0;
+	background-color: rgba(0,0,0,0);
+	margin-top: 15px;
+		img {
+			width: 80%;
+			position: relative;
+			top: 50%;
+			transform:translate(0,-50%);
+		}
+		.navbar-nav {
+			li {
+				a {
+					color: #673ab7;
+				}
+			}
+		}
+		.navbar-right {
+			li {
+				margin-right: 7px;
+				.icon-right {
+					margin-right: 18px;
+					
+				}
+				.icon-magnifier {
+					min-width: 19px;
+				}
+			}
+		}
+		.btn-login {
+			margin-top: 15px;
+			a {
+				font-family: Lato;
+				font-size: 14px;
+				letter-spacing: 0.2px;
+				text-align: left;
+				color: white !important;
+				border-radius: 100px;
+				background-color: #00bcd4;
+				padding: 11px 23px;
+
+			}
+			span {
+				margin-left: 5px;
+			}
+		}
+}
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+.col-md-6 {
+	padding: 0;
+}
+.bgr-cl-1 {
+	background-color: #00bcd4;
+}
+.bgr-cl-2 {
+	background-color: #f44336;
+}
+.bgr-cl-3 {
+	background-color: #ffc107;
+}
+.container-fluid {
+	padding: 0;
+}
+.row {
+	padding: 0;
+	margin: 0;
+}
+#home-page {
+
+	.home-page-left {
+		.logo-content {
+			margin-top: 16%;
+		}
+		.text-content-title {
+			position: relative;
+			font-size: 64px;
+			font-family: VNFquicksand;
+			font-weight: bold;
+			color: #00bcd4;
+			margin-top: 7%;
+			margin-bottom: 7%;
+			line-height: 1.13;
+			.fill-top-big {
+				position: absolute;
+				padding: 10px 37px;
+    			border-radius: 35px;
+    			@include position(-4%,-10%)
+			}
+			.fill-top-small {
+				position: absolute;
+				padding: 10px 13px;
+    			border-radius: 35px;
+    			@include position(4%,-3%)
+			}
+			.fill-bot-big-big {
+				position: absolute;
+				padding: 10px 43px;
+    			border-radius: 35px;
+    			@include position(80%,84%)
+			}
+			.fill-bot-big-small {
+				position: absolute;
+				padding: 10px 37px;
+    			border-radius: 35px;
+    			@include position(90%,81%)
+			}
+			.fill-bot-small-small {
+				position: absolute;
+				padding: 10px 13px;
+    			border-radius: 35px;
+    			@include position(90%,76%)
+			}
+		}
+		
+		.text-content-summer {
+			font-size: 16px;
+	  		line-height: 1.5;
+	  		text-align: justify;
+	  		color: #673ab7;
+	  		overflow: hidden;
+	  		padding-right: 6%;
+	  		margin-bottom: 5%;
+		}
+		.find-more {
+			a {
+			  	border-radius: 100px;
+			  	background-color: #ffffff;
+				border: 2px solid #673ab7;
+			  	text-align: center;
+			    line-height: 50px; 	
+			  	font-size: 14px;
+			  	color: #673ab7;
+			  	padding: 16px 23px 16px 25px;
+			  	font-weight: bold;
+			}
+		}
+		.signin-try {
+			a {
+				border-radius: 100px;
+			    background-color: #e91e63; 
+			    text-align: center;
+			    line-height: 50px;  
+			    font-size: 14px;
+			    padding: 18px 27px;
+			    color:white;
+			    font-weight: bold;
+			    .ti-right {
+			    	margin-left: -2%;
+			    }
+			}
+		}
+	}
+	.home-page-right {
+		position: relative;
+		img {
+			width: 100%;
+			height: 100vh;
+		}
+		.btn-side-bar-pre {
+			a{
+				border: 2px solid #00bcd4;
+				top: 50%;
+				color: #00bcd4;
+				position: absolute;
+				transform: translate(50%,-50%);
+				border-radius: 20px;
+				padding: 2px 10px;
+
+			}
+		}
+		.btn-side-bar-next {
+			a{
+				background-color: #e91e63;
+				top: 50%;
+				right: 0;
+				color: white;
+				position: absolute;
+				transform: translate(-50%,-50%);
+				border-radius: 20px;
+				padding: 2px 10px;
+
+			}
+		}
+		.fill-side-big {
+			position: absolute;
+			padding: 10px 37px;
+			border-radius: 35px;
+			@include position(90%,4%)
+		}
+		.fill-side-small-1 {
+			position: absolute;
+			padding: 7px 7px;
+			border-radius: 100%;
+			border: solid 4px #e91e63;
+			@include position(90%,13%)
+		}
+		.fill-side-small-2 {
+			position: absolute;
+			padding: 7px 7px;
+			border-radius: 100%;
+			border: solid 4px #b1d136;
+			@include position(90%,16%)
+		}
+		.fill-side-small-3 {
+			position: absolute;
+			padding: 7px 7px;
+			border-radius: 100%;
+			border: solid 4px #ffc107;
+			@include position(90%,19%)
+		}
+	}
+}
+#courses {
+	padding: 10% 0 10% 0;
+	.content-section-courses-familiar {
+		text-align: center;
+		.section-courses-img {
+			width: 100%;
+			min-height: 340px;
+		}
+		h2 {
+			text-align: center;
+		    color: #00bcd4;
+		    font-family: VNFquicksand;
+		    font-weight: bold;
+		}
+		.section-courses-text {
+			min-height: 150px;
+			p {
+			    font-family: Lato;
+			    text-align: left;
+			    padding: 0 140px;
+			    text-align: justify
+			}
+		}
+		a {
+			font-size: 86%;
+			color: white;
+			border-radius: 100px;
+		  	background-color: #00bcd4;
+		  	padding: 10px 30px;
+		  	font-weight: bold;
+		}
+	}
+	.content-section-courses-basic {
+		@extend .content-section-courses-familiar;
+		h2 {
+			color: #673ab7;
+		}
+		a {
+			background-color: #673ab7;
+		}
+	}
+	.content-section-courses-advance {
+		@extend .content-section-courses-familiar;
+		h2 {
+			color: #e91e63;
+		}
+		a {
+			background-color: #e91e63;
+		}
+	}
+}
+#bookcase {
+	.section-bookcase-left {
+		.section-bookcase-left-pr {
+			font-family: VNFquicksand;
+			text-align: justify;
+			color: #673ab7;
+			padding-top: 22%;
+			font-size: 24px;
+			position: relative;
+			font-weight: bold;
+			menu {
+				margin: 0;
+				li {
+					list-style-type:none;
+					padding-top: 9%;
+					span {
+						color: #ffc107;
+						padding-right: 8%;
+					}
+				}
+			}
+		}
+		.btn-signin {
+			padding: 10% 6%;
+			a {
+			    color: white;
+				border-radius: 100px;
+			    background-color: #00bcd4;
+			    padding: 16px 43px;
+			    font-family: Lato;
+			    font-weight: bold;
+			}
+		}
+	}
+	.section-bookcase-right {
+		padding-bottom: 10%;
+		.section-bookcase-right-img-1 {
+			padding-top: 22%;
+			position: relative;
+			img {
+				border-radius: 30px;
+				width: 100%;
+			}
+			.section-bookcase-right-img-2 {
+				position: absolute;
+				width: 53%;
+    			top: 13%;
+    			left: -11%;
+				img {
+					width: 100%;
+				}
+			}
+			.section-bookcase-right-img-3 {
+				position: absolute;
+				width: 40%;
+    			left: 68%;
+    			top: 79%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
