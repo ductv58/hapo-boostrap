@@ -86,6 +86,9 @@ select:focus,input:focus,textarea:focus {
 				margin-left: 5px;
 			}
 		}
+		.icon-magnifier {
+			font-size: 18px;
+		}
 }
 .clearfix:after {
 	content: ".";
@@ -696,6 +699,62 @@ select:focus,input:focus,textarea:focus {
 	}
 }
 footer {
+	height: 100vh;
 	.logo-footer {
+		margin-top: 8%;
+	}
+	.footer-content-left {
+		margin-top: 5%;
+		color: white;
+		.footer-content-left-menu {
+			margin-left: 3%;
+			.footer-content {
+				width: 14%;
+				float: left;
+				li {
+					list-style-type: none;
+					margin-top: 14%;
+					font-size: 16px;
+					.footer-menu {
+						font-size: 16px;
+						font-weight: 900;
+  						letter-spacing: 0.3px;
+					}
+				}
+				
+			}
+		}
+	
+		.footer-url {
+			li {
+				list-style-type: none;
+				float: left;
+				margin-top: 18%;
+				margin-left: 6%;
+			}
+		}
+		.link-foot {
+			li {
+				list-style-type: none;
+				margin-top: 20%;
+				float: left;
+				font-size: 24px;
+				margin-left: 6%;
+			}
+		}
+		.copyright {
+			margin-top: 10%;
+			margin-left: 13%;
+		}
+	}
+	.footer-content-right {
+		float: left;
+		margin-top: 6%;
+		iframe {
+			width: 450px;
+		    height: 614px;
+			border:none;
+			overflow:hidden;
+		}
 	}
 }
